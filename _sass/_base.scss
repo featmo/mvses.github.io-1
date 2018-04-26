@@ -15,7 +15,7 @@ $base-font-family:              Helvetica, sans-serif;
 $base-line-height:              1.5em;
 $horizontal-spacing-unit:       50px;
 $vertical-spacing-unit:         40px;
-$nav-height:                    56px;
+$nav-height:                    70px;
 
 /* portfolio tinkering */
 $img_spacing: 5px; 
@@ -24,7 +24,7 @@ $caption_font_size: 12px;
 $caption_color: #aaa;
 
 /* COLORS  */
-$red:  #FF3636;
+$main-color:  rgb(46, 46, 46);
 $orange: #F29105;
 $blue: #2698BA;
 $green: #11D68B;
@@ -37,7 +37,7 @@ $grey-color-light: #ddd;  /* navigation bar border */
 $text-color:     #666;
 
 /* Set theme color *************************/
-$theme-color:   $red;
+$theme-color:   $main-color;
 
 
 /************************************************************/
@@ -46,13 +46,19 @@ $theme-color:   $red;
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
+    font-family: $usr-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 100;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    ::selection {
+        background: $highlight-color; /* WebKit/Blink Browsers */
+      }
+      ::-moz-selection {
+        background: $highlight-color; /* Gecko Browsers */
+      }
 }
 
 
@@ -75,8 +81,8 @@ hr{
     /* Inset, by Dan Eden */
     border: 0;
     height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 0px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.3);
 
 }
 
@@ -201,6 +207,7 @@ pre {
     margin-left: auto;
     padding-right: $horizontal-spacing-unit;
     padding-left: $horizontal-spacing-unit;
+    
     @extend %clearfix;
 
     @include media-query($on-laptop) {
@@ -224,5 +231,11 @@ pre {
     }
 }
 
+/**Links**/
+.page-link{
+    font-size: 15px;
+}
 
-
+.fa {
+    font-size:30px!important;
+}

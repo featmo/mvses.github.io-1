@@ -1,17 +1,21 @@
 # Site settings
-title: *folio
+title: isthismo
 email: you@example.com
-description: > # this means to ignore newlines until "baseurl:"
-  A simple, whitespace, helvetica based portfolio theme.
+description: it is > # this means to ignore newlines until "baseurl:"
 baseurl:  # the subpath of your site, e.g. /blog/
 url:  # the base hostname & protocol for your site
-twitter_username: twitter_username
-github_username:  github_username
+twitter_username: isthismo
+github_username:  moseseribo
+linkedin_username: moses-eribo-5b7900108 
+instagram_username: ommai_mo
+#plugins
+plugins: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
 
 highlighter: rouge
+future: true
 
 # Pagination
 paginate: 15
@@ -22,8 +26,8 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
-  poetry:
+  college:
     output: true
-    permalink: /poetry/:path/
+    permalink: /college/:path/
 
 
