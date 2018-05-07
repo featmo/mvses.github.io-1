@@ -225,6 +225,14 @@ font-size: 42px;
     width: 100%;
     height: auto;
 }
+.post-content > p > img{
+    width: 640px;
+    height:auto;
+}
+.post-content > p > a {
+    background:yellow;
+   
+}
 /** Poem formatting ********************************************/
 .poem-title {
 font-size: 24px;
