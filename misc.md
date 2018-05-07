@@ -1,9 +1,9 @@
 ---
 layout: page
-title: portfolio
-permalink: /portfolio/
+title: misc
+permalink: /misc/
 ---
-
+<p style="text-align:center">Small projects that tend to have no time frame</p>
 {% for project in site.portfolio %}
 
 {% if project.redirect %}

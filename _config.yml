@@ -25,7 +25,7 @@ paginate_path: "/blog/page:num/"
 collections:
   portfolio:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /misc/:path/
   college:
     output: true
     permalink: /college/:path/

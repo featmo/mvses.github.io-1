@@ -16,7 +16,15 @@ layout: default
       <li>
         <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
+        <p class="post-meta">{{post.tag}}</p>
         <p>{{ post.description }}</p>
+        
+        <div class="post-img" >
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <img class="post-image" src="{{post.img}}">
+          </a>
+        </div>
+
         <br/>
         <hr/>
       </li>

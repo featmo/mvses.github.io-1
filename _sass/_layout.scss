@@ -13,6 +13,9 @@ height:70px;
 width:100%;
 z-index: 50;
 }
+.site-header .wrapper{
+    width:100%;
+}
 
 .site-title {
 font-size: 20px;
@@ -25,13 +28,15 @@ color: $theme-color;
     }
 }
 .site-nav {
-float: right;
+/**float: right;**/
+width:100%;
+height:70px;
 line-height: $nav-height;
 .page-link{
 line-height: $base-line-height;
         // Gaps between nav items, but not on the first one
 &:not(:first-child) {
-margin-left: 10px;
+margin-left: 20px;
         }
     }
 @include media-query($on-palm) {
@@ -48,7 +53,24 @@ display: line;
         }
     }
 }
+.site-nav .trigger{
+    /**background:#000;**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
 
+    
+}
+.site-nav .trigger a{
+    font-weight:700;
+    color:#000 !important;
+    opacity:0.5;
+    
+}
+.site-nav .trigger a:hover{
+    opacity:1;
+}
 .header-bar{
     left: 0px;
     top: 0px;
@@ -78,6 +100,8 @@ display: line;
 }
 .site-header .wrapper .site-nav{
     color:red !important;
+
+    
 }
 
 /**
@@ -190,6 +214,17 @@ display: block;
 font-size: 42px;
 }
 
+.post-img {
+    width:auto;
+    height:250px;
+    background-repeat:none;
+    
+    background-size: cover;
+}
+.post-image {
+    width: 100%;
+    height: auto;
+}
 /** Poem formatting ********************************************/
 .poem-title {
 font-size: 24px;
@@ -216,22 +251,24 @@ clear: both;
 }
 .project {
 /**width: 33.33%;**/
-width: 50%;
+width: 50%; /*50%*/
 height: 230px;
 float: left;
 vertical-align: middle;
 box-sizing: border-box;
 padding: 10px;
+margin-bottom:30px;
 }
 .thumbnail{
 width: 100%;
 height: 230px;
 overflow: hidden;
 
+
 }
 .thumbnail img{
-width: 500px;
-height: 500px;
+width: 400px;
+height: 400px;
 position: relative;
 left: -25%;
 top: -5%;
@@ -247,7 +284,7 @@ display: none;
 position: absolute;
 top: 0;
 left: 0;
-bottom: 0;
+bottom: 0px;
 right: 0;
 background: rgba(0,0,0,0.4);
 color: $grey-color-light;
