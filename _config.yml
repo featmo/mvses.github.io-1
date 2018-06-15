@@ -7,7 +7,7 @@ url:  # the base hostname & protocol for your site
 twitter_username: isthismo
 github_username:  moseseribo
 linkedin_username: moses-eribo-5b7900108 
-instagram_username: ommai_mo
+instagram_username: isthis.mo
 #plugins
 plugins: [jekyll-paginate]
 
